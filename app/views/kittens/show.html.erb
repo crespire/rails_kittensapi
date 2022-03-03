@@ -4,3 +4,5 @@
     <li>Cuteness: <%= @kitten.cuteness %></li>
     <li>Softness: <%= @kitten.softness %></li>
 </ul>
+
+<p><%= link_to 'Edit', edit_kitten_path %> | <%= link_to 'Destroy', kittens_path(@kitten), method: :delete, data: { confirm: 'Delete squishy?' } </p>
