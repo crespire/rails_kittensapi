@@ -5,5 +5,4 @@ class Kitten < ApplicationRecord
   validates :softness, presence: true
   validates :cuteness, inclusion: { in: 1..5 }
   validates :softness, inclusion: { in: 1..5 }
-
 end
