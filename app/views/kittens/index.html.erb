@@ -1,6 +1,6 @@
 <h1>Current Kittens</h1>
 <ul>
 <% @kittens.each do |kitten| %>
-    <li><%= link_to kitten.name, edit_kitten_path %></li>
+    <li><%= link_to kitten.name, edit_kitten_path(kitten) %></li>
 <% end %>
 </ul>

@@ -9,6 +9,7 @@ class KittensController < ApplicationController
 
   # Input form to create model instance.
   def new
+    @kitten = Kitten.new
   end
 
   # Save model instance to DB.

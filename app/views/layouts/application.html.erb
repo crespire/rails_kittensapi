@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <% if notice.present? %>
+      <p><%= notice %></p>
+    <% end %>
+    <ul>
+      <li><%= link_to 'Home', :root %>
+      <li><%= link_to 'New Kitten', new_kitten_path %></li>
+    </ul>
     <%= yield %>
   </body>
 </html>
